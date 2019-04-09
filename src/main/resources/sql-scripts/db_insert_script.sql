@@ -1,0 +1,25 @@
+
+INSERT INTO `first_team` VALUES
+	(1,'Alban','Lafont','Goalkeeper','1999-01-23','France', 17000000),
+	(23,'Pietro','Terracciano','Goalkeeper','1990-03-08','Italy', 800000),
+	(67,'Simeone','Ghidotti','Goalkeeper','2000-03-19','Italy', 75000),
+	(4,'Nikola','Milenkovic','Centre-Back','1997-10-12','Serbia', 35000000),
+	(20,'German','Pezzella','Centre-Back','1991-06-27','Argentina', 20000000),
+	(31,'Victor','Hugo','Centre-Back','1991-05-20','Brazil', 9000000),
+	(5,'Federico','Ceccherini','Centre-Back','1992-05-11','Italy', 2800000),
+	(3,'Christiano','Biraghi','Left-Back','1992-09-01','Italy', 10000000),
+	(16,'David','Hancko','Left-Back','1997-12-13','Slovakia', 2500000),
+	(2,'Vincent','Laurini','Right-Back','1989-06-10','France', 1800000),
+	(6,'Christian','Norgaard','Defensive Midfield','1994-03-10','Denmark', 2000000),
+	(17,'Jordan','Veretout','Central Midfield','1993-03-01','France', 25000000),
+	(24,'Marco','Benassi','Central Midfield','1994-09-08','Italy', 20000000),
+	(14,'Bryan','Dabo','Central Midfield','1992-02-18','France', 3500000),
+	(10,'Marko','Pjaca','Left Winger','1995-05-06','Croatia', 10000000),
+	(25,'Federico','Chiesa','Right Winger','1997-10-25','Italy', 50000000),
+	(11,'Kevin','Mirallas','Right Winger','1987-10-05','Belgium', 6500000),
+	(9,'Giovanni','Simeone','Centre-Forward','1995-07-05','Argentina', 23000000),
+	(29,'Luis','Muriel','Centre-Forward','1991-04-16','Colombia', 10000000),
+	(28,'Dusan','Vlahovic','Centre-Forward','2000-01-28','Serbia', 1000000),
+	(27,'Martin','Graiciar','Centre-Forward','1999-04-11','Czech Republic', 700000),
+
+
