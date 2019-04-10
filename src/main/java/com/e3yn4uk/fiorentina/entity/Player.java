@@ -2,6 +2,7 @@ package com.e3yn4uk.fiorentina.entity;
 
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * Created by 8e3Yn4uK on 10.04.2019
@@ -26,6 +27,13 @@ public class Player {
     private String position;
 
     public Player() {
+    }
+
+    public Player(int id, String firstName, String lastName, String position) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.position = position;
     }
 
     public Player(String firstName, String lastName, String position) {
@@ -74,5 +82,21 @@ public class Player {
                 ", lastName='" + lastName + '\'' +
                 ", position='" + position + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Player)) return false;
+        Player player = (Player) o;
+        return id == player.id &&
+                Objects.equals(firstName, player.firstName) &&
+                Objects.equals(lastName, player.lastName) &&
+                Objects.equals(position, player.position);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, position);
     }
 }
