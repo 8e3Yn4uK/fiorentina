@@ -61,5 +61,14 @@ public class PlayerController {
         return "redirect:/players/list";
     }
 
+    @GetMapping("/delete")
+    public String deletePlayer(@RequestParam("playerId") int theId) {
+
+        playerService.deleteById(theId);
+
+        return "redirect:/players/list";
+
+    }
+
 
 }
