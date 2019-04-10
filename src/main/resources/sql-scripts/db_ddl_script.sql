@@ -8,9 +8,6 @@ CREATE TABLE `first_team` (
   `first_name` varchar(45) DEFAULT NULL,
   `last_name` varchar(45) DEFAULT NULL,
   `position` varchar(45) DEFAULT NULL,
-  `date_of_birth` DATE DEFAULT NULL,
-  `nationality` varchar(45) DEFAULT NULL,
-  `market_value` int(11) DEFAULT NULL,
 
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
