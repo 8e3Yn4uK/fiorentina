@@ -5,10 +5,7 @@ import com.e3yn4uk.fiorentina.service.IPlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -41,6 +38,16 @@ public class PlayerController {
     public String showFormForAdd(Model theModel) {
 
         Player thePlayer = new Player();
+        theModel.addAttribute("player", thePlayer);
+
+        return "players/player-form";
+    }
+
+    @GetMapping("/showFormForUpdate")
+    public String showFormForUpdate(@RequestParam("playerId") int theId, Model theModel) {
+
+        Player thePlayer = playerService.findById(theId);
+
         theModel.addAttribute("player", thePlayer);
 
         return "players/player-form";

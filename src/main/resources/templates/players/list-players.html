@@ -28,15 +28,22 @@
 				<th>First Name</th>
 				<th>Last Name</th>
 				<th>Position</th>
+				<th>Action</th>
 			</tr>
 		</thead>
 		
 		<tbody>
 			<tr th:each="tempPlayer : ${players}">
-			
+
 				<td th:text="${tempPlayer.firstName}" />
 				<td th:text="${tempPlayer.lastName}" />
 				<td th:text="${tempPlayer.position}" />
+				<td>
+					<a th:href="@{/players/showFormForUpdate(playerId=${tempPlayer.id})}"
+						class="btn btn-info btn-sm">
+						Update
+					</a>
+				</td>
 
 			</tr>
 		</tbody>		
